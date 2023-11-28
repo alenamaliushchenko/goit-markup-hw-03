@@ -110,13 +110,11 @@ a:focus {
 .page-header {
   display: flex;
   justify-content: space-between;
-  /* width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px; */
   padding-left: 156px;
   border-bottom: 1px solid var(--secondary-background-color);
 }
 .container .page-header {
+  display: flex;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -383,7 +381,7 @@ a:focus {
   padding: 100px 0;
   background-color: var(--primary-color);
 }
-.footer-logo link {
+.footer-logo .link {
   display: inline-block;
   margin-bottom: 16px;
 }
