@@ -48,11 +48,11 @@ img {
 }
 button:hover,
 button:focus {
-  border: 1px solid transparent
+  border: 1px solid transparent;
   color: var(--focus-color);
   background-color: var(--active-background-color);
 }
-.button-filter list {
+.button-filter .list {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -110,11 +110,17 @@ a:focus {
 .page-header {
   display: flex;
   justify-content: space-between;
+  /* width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px; */
+  padding-left: 156px;
+  border-bottom: 1px solid var(--secondary-background-color);
+}
+.container .page-header {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  padding-left: 156px;
-  border-bottom: 1px solid var(--secondary-background-color);
+
 }
 /* .container page-header {
  display: flex;
@@ -137,10 +143,7 @@ a:focus {
   display: flex;
   gap: 40px;
 }
-.contact {
-  display: inline-flex;
-  column-gap: 40px;
-}
+
 .page-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -169,16 +172,31 @@ a:focus {
 .menu-link:focus {
   color: var(--active-background-color);
 }
-.contact-info {
+.contact {
   display: flex;
+  gap: 40px;
   font-style: normal;
 }
-.contact-list-link {
+ /* .contact-info {
+  display: flex;
+  font-style: normal;
+  gap: 40px;
+  
+}  */
+.contact .contact-list-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--secondary-color);
+}
+
+/* .contact-list-link {
   display: flex;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-}
+  
+  
+} */
 .contact-list-link:hover,
 .contact-list-link:focus {
   color: var(--active-background-color);
@@ -232,10 +250,10 @@ a:focus {
   padding: 120px 156px;
 }
 .main-content-list .list-item {
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 .list-item-heading {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 /* .main-content-list list {
   display: inline-flex;
@@ -295,15 +313,21 @@ a:focus {
   width: calc((100%-72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
-.our-team-list .list-item-heading {
+.about-member .list-item-heading {
   text-align: center;
   margin-bottom: 8px;
 }
-.our-team-list .list-item-description {
+.about-member .list-item-description {
   text-align: center;
   padding-top: 8px;
 }
-
+.container .about-member {
+  padding: 32px 0;
+}
+/* .about-member .list-item-heading {
+  text-align: center;
+  margin-bottom: 8px
+} */
 /*Main page styles*/
 .section-title {
   font-size: 20px;
