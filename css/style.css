@@ -51,12 +51,7 @@ button:focus {
   color: var(--focus-color);
   background-color: var(--active-background-color);
 }
-.button-filter .list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
-}
+
 .button {
   display: block;
   min-width: 169px;
@@ -75,10 +70,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
-.btn {
-  padding: 12px 24px;
-  border: 1px solid var(--secondary-background-color);
-}
+
 a:hover,
 a:focus {
   color: var(--active-background-color);
@@ -106,7 +98,9 @@ a:focus {
 }
 .container .page-header {
   display: flex; 
-  width: 1158px;
+  justify-content: center;
+  align-items: center;
+  /* width: 1158px; */
   margin: 0 auto;
   padding: 0 15px;
 } 
@@ -127,12 +121,14 @@ a:focus {
 }
 .contact .list {
   display: flex;
-  padding-top: 40 px;
-  padding-bottom: 24px;
+  padding: 40 px 24px;
+  justify-content: center;
   align-items: center;
 }
 .contact {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
   font-style: normal;
 }
@@ -216,34 +212,26 @@ a:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* .container .main-content {
 
-} */
 .main-content-list {
   display: flex;
   flex-direction: wrap;
   align-items: flex-start;
   gap: 24px;
-  
-  
 }
-.main-content-list .list-item {
-  width: calc((100% - 72px) / 4);
+.list-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 .list-item-heading {
   margin-bottom: 8px;
 }
-/* .main-content-list list {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-} */
 .list-item-heading {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-color);
+  padding-top: 120px;
 }
 .list-item-description {
   font-size: 16px;
@@ -291,22 +279,15 @@ a:focus {
   width: calc((100%-72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
-.about-member .list-item-heading {
+.list-item-heading {
   text-align: center;
-  margin-bottom: 8px;
+  /* margin-top: 32px; */
 }
-.about-member .list-item-description {
+.list-item-description {
   text-align: center;
   padding-top: 8px;
+  margin-bottom: 32px;
 }
-.container .about-member {
-  padding: 32px 0;
-}
-/* .about-member .list-item-heading {
-  text-align: center;
-  margin-bottom: 8px
-} */
-/*Main page styles*/
 .section-title {
   font-size: 20px;
   font-weight: 500;
@@ -318,19 +299,36 @@ a:focus {
   color: var(--secondary-color);
   line-height: 1.5;
 }
+
+/*Main page styles*/
+
 /*Portfolio styles*/
+
 .portfolio-main-section {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.all-blocks-list .block {
+.button-filter {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.btn {
+  color: var(--accent-color);
+  background-color: var(--passive-background-color);
+  padding: 12px 24px;
+  border: 1px solid var(--secondary-background-color);
+  border-radius: 4px;
+}
+.all-blocks-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
-.list .block {
-  calc((100% - 48px) / 3);
+.block {
+  width: calc((100% - 48px) / 3);
 }
 .container-about {
   padding: 32px 16px;
@@ -344,6 +342,7 @@ a:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-color);
+  margin-bottom: 8px
 }
 .block-text {
   line-height: 1.5;
@@ -357,16 +356,15 @@ a:focus {
 /*Portfolio styles*/
 
 /*Footer styles*/
+
 .container .footer {
-  display: : inline-block;
+  display: inline-block;
   margin-bottom: 16px; 
-  /* align-items: center; */
 }
 .footer {
   padding: 100px 0;
   background-color: var(--primary-color);
-}
-.link .footer-logo {
+.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
