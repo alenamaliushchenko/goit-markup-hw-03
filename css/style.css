@@ -359,18 +359,14 @@ a:focus {
 
 /*Footer styles*/
 
-.container .footer {
+.container .footer-logo-link {
   display: inline-block;
   margin-bottom: 16px; 
 }
 .footer {
   padding: 100px 0;
   background-color: var(--primary-color);
-.footer-logo .link {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-.footer-logo {
+.footer-logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -389,4 +385,4 @@ a:focus {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-/* Footer */
+/*Footer styles*/
