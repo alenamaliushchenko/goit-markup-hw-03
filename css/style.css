@@ -100,7 +100,6 @@ a:focus {
   display: flex; 
   justify-content: center;
   align-items: center;
-  /* width: 1158px; */
   margin: 0 auto;
   padding: 0 15px;
 } 
@@ -279,6 +278,9 @@ a:focus {
   width: calc((100%-72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
+.container-members {
+  padding: 32px 0;
+}
 .list-item-heading {
   text-align: center;
   /* margin-top: 32px; */
@@ -364,7 +366,7 @@ a:focus {
 .footer {
   padding: 100px 0;
   background-color: var(--primary-color);
-.footer-logo {
+.footer-logo .link {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -387,4 +389,4 @@ a:focus {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-/*Footer styles*/
+/* Footer */
