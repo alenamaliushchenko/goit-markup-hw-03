@@ -8,11 +8,6 @@
   --passive-background-color: #f4f4fd; /*Light, button bgc*/
   --active-background-color: #404bbf; /*Pressed state, active bgc*/
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--secondary-color);
@@ -42,27 +37,6 @@ img {
 .link {
   text-decoration: none;
 }
-.list {
-  list-style: none;
-}
-button:hover,
-button:focus {
-  border: 1px solid transparent;
-  color: var(--focus-color);
-  background-color: var(--active-background-color);
-}
-
-.button {
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  font-family: "Roboto", sans-serif;
-  border: none;
-  background-color: var(--accent-color);
-  color: var(--focus-color);
-  border-radius: 4px;
-  cursor: pointer;
-}
 button {
   font-size: 16px;
   font-style: normal;
@@ -74,34 +48,22 @@ button {
 a:hover,
 a:focus {
   color: var(--active-background-color);
-}
+} 
 
+/*Common styles*/
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
-/*Common styles*/
 
 /* Header styles*/
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 156px;
-  border-bottom: 1px solid var(--secondary-background-color);
+ border-bottom: 1px solid var(--secondary-background-color);
 }
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.container .page-header {
+.header-container {
   display: flex; 
-  justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 0 15px;
 } 
 .navigation {
   display: flex;
@@ -118,11 +80,8 @@ a:focus {
   align-items: center;
   gap: 40px;
 }
-.contact .list {
-  display: flex;
-  padding: 40 px 24px;
-  justify-content: center;
-  align-items: center;
+.contact-info {
+  margin-left: auto;
 }
 .contact {
   display: flex;
@@ -131,9 +90,7 @@ a:focus {
   gap: 40px;
   font-style: normal;
 }
-.contact .contact-list-link {
-  display: flex;
-  margin-bottom: 16px;
+.contact-list-link {
   color: var(--secondary-color);
 }
 .contact-list-link:hover,
@@ -168,7 +125,6 @@ a:focus {
 .menu-link:focus {
   color: var(--active-background-color);
 }
-
 /* Header styles*/
 
 
@@ -182,23 +138,34 @@ a:focus {
   background-color: var(--primary-color);
   padding: 188px 0;
 }
-.main-content {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 120px 0;
-}
 .main-title {
   max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--focus-color);
-  justify-content: center;
   text-align: center;
-  padding-top: 188px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
-
+.button {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--focus-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--active-background-color);
+}
+.main-content {
+  padding: 120px 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -211,18 +178,13 @@ a:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .main-content-list {
   display: flex;
-  flex-direction: wrap;
-  align-items: flex-start;
   gap: 24px;
 }
 .list-item {
   width: calc((100% - 3 * 24px) / 4);
-}
-.list-item-heading {
-  margin-bottom: 8px;
+  background-color: #ffffff;
 }
 .list-item-heading {
   font-weight: 500;
@@ -230,7 +192,7 @@ a:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-color);
-  padding-top: 120px;
+  margin-bottom: 8px;
 }
 .list-item-description {
   font-size: 16px;
@@ -238,21 +200,15 @@ a:focus {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
 }
-.list-item {
-  background-color: #ffffff;
-  width: 264px;
-}
-.secondary-contant {
+.secondary-content {
   padding-bottom: 120px;
-  /* display: flex; */
 }
 .secondary-contant-list {
   display: flex;
-  flex-direction: wrap;
   gap: 24px;
 }
 .secondary-contant-list .list-item {
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .secondary-title {
   font-size: 36px;
@@ -262,7 +218,6 @@ a:focus {
   text-transform: capitalize;
   color: var(--primary-color);
   margin-bottom: 72px;
-  padding-top: 120px;
 }
 .our-team {
   padding: 120px 0;
@@ -270,25 +225,20 @@ a:focus {
 }
 .our-team-list {
   display: flex;
-  flex-direction: wrap;
-  align-items: flex-start;
   gap: 24px;
 }
 .our-team-list .list-item {
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+}
+.team-title {
+  text-align: center;
+}
+.team-description {
+  text-align: center;
 }
 .container-members {
   padding: 32px 0;
-}
-.list-item-heading {
-  text-align: center;
-  /* margin-top: 32px; */
-}
-.list-item-description {
-  text-align: center;
-  padding-top: 8px;
-  margin-bottom: 32px;
 }
 .section-title {
   font-size: 20px;
@@ -336,7 +286,6 @@ a:focus {
   padding: 32px 16px;
   border: 1px solid var(--secondary-background-color);
   border-top: none;
-  margin-bottom: 8px;
 }
 .block-title {
   font-weight: 500;
