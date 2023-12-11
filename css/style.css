@@ -254,20 +254,6 @@ a:focus {
   padding: 120px 0;
   background-color: #fff;
 }
-
-/* .button-filter {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
-}
-.btn {
-  color: var(--accent-color);
-  background-color: var(--passive-background-color);
-  padding: 12px 24px;
-  border: 1px solid var(--secondary-background-color);
-  border-radius: 4px;
-} */
 .all-blocks-list {
   display: flex;
   flex-wrap: wrap;
