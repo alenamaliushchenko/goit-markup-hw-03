@@ -282,7 +282,7 @@ a:focus {
   border: 1px solid var(--secondary-background-color);
   border-top: none;
 }
-.block-title {
+.portfolio-block-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -290,7 +290,7 @@ a:focus {
   color: var(--primary-color);
   margin-bottom: 8px;
 }
-.block-text {
+.portfolio-block-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
