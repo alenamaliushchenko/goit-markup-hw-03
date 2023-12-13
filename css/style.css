@@ -51,6 +51,7 @@ a:focus {
 }
 
 /*Common styles*/
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -80,6 +81,7 @@ a:focus {
   align-items: center;
   gap: 40px;
 }
+
 .contact-info {
   margin-left: auto;
 }
