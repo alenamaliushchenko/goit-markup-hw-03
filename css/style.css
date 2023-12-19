@@ -331,7 +331,7 @@ a:focus {
 .block-line {
   width: calc((100% - 48px) / 3);
 }
-.box {
+/* .box {
   position: relative;
   width: 360px;
   height: 300px;
@@ -361,7 +361,7 @@ a:focus {
   padding-top: 40px;
   padding-left: 32px;
   padding-right: 32px;
-}
+} */
 /*Footer styles*/
 
 .container .footer-logo-link {
